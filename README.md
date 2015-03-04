@@ -24,9 +24,11 @@ once we have term frequency vectors for each news article indexed in database, b
 
 Here, we have not used PageRank for ranking as news articles are not linked with each other or other web-pages. If we can manage to extract the links while crawling content from URLs, then pagerank can also be applied.
 
-**Data.csv** contains sample news headlines data in tabular format with attributes *Id*,*Headline*,*Duration*,*Source Id*,*Source URL*.
-**Final_database.csv** contains final larger news dataset to test the scalability of the system.
+**data.csv** contains sample news headlines data in tabular format with attributes *Id*,*Headline*,*Duration*,*Source Id*,*Source URL*.
+**final_database.csv** contains final larger news dataset to test the scalability of the system.
 
-**Searchengine.py** contains both crawler and searcher python classes for implementing *(crawling,indexing)* and *(searching,ranking)* tasks respectively. The functionality of these class objects can be tested through web-based interactive computational environment Ipython Notebook using files **Searcher.ipynb** and **Crawler.ipynb** files.
+**searchengine.py** contains both crawler and searcher python classes for implementing *(crawling,indexing)* and *(searching,ranking)* tasks respectively. The functionality of these class objects can be tested through web-based interactive computational environment Ipython Notebook using files **Searcher.ipynb** and **Crawler.ipynb** files.
+
+**searchenginev_2.py** skips crawling content step and indexes text only from news headlines and thus give search results based on headlines only not content. Thus these two implementation can be used to compare the accuracy of search results of a query with respect to headlines and actual news content.
 
 
